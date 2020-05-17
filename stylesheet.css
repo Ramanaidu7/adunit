@@ -463,14 +463,32 @@ body {
     padding: 10% 0 100% 0px;
     overflow-x: hidden;
 }
-/*.port_prax_img2 {
+.port_prax_img3 {
     background-image: url(https://ramanaidu7.github.io/newpage/images/tile3paralax.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: 100% 0;
     padding: 10% 0 100% 0px;
     overflow-x: hidden;
-}*/
+}
+.port_prax_img2 {
+    background-image: url(https://ramanaidu7.github.io/newpage/images/tile4paralax.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100% 0;
+    padding: 10% 0 100% 0px;
+    overflow-x: hidden;
+}
+.portf_text {
+    padding-left: 15px;
+    margin-top: 13.5%;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin-left: 8%;
+    margin-bottom: 9%;
+}
 .slide1, .slide2, .slide3 {
    text-align: center;
 }
