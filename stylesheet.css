@@ -159,7 +159,7 @@ a,
     background-size: cover;
     animation-duration: 0.8s;
     -webkit-animation-duration: 0.8s;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
 }
 
 .jumbotron p {
@@ -191,28 +191,27 @@ a,
 
 
 .port_prax_img1 {
-    background-image: url('https://ramanaidu7.github.io/newpage/images/tile1paralax.jpg');
+    background-image: url(https://ramanaidu7.github.io/newpage/images/tile1paralax.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    background-position: 100% 0;
-    padding: 5% 0 30% 0px;
+    background-size: 84%;
+    background-position: center;
     overflow-x: hidden;
+    padding: 41%;
+    background-repeat: no-repeat;
 }
-.port_prax_img2 {
-    background-image: url('https://ramanaidu7.github.io/newpage/images/tile4paralax.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 100% 0;
-    padding: 5% 0 30% 0px;
-    overflow-x: hidden;
+img.shea_img {
+    width: 82%;
+    margin: 0 auto;
 }
 .port_prax_img3 {
-    background-image: url('https://ramanaidu7.github.io/newpage/images/tile3paralax.jpg');
+    background-image: url(https://ramanaidu7.github.io/newpage/images/tile3paralax.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    background-position: 100% 0;
-    padding: 5% 0 5% 0px;
+    background-size: 84%;
+    background-position: center;
+    padding: 41%;
     overflow-x: hidden;
+    background-repeat: no-repeat;
+    margin-left: -18%;
 }
 .port_width {
     width: 100%;
@@ -220,14 +219,11 @@ a,
     margin: 0 auto;
 }
 img.pjt_side_img {
-    width: 93%;
+    width: 89%;
 }
 .portf_text {
-    padding-left: 52px;
-    margin-top: 13.5%;
-    background-color: #fff;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 19%;
+    padding-left: 4%;
 }
 .portf_text p {
     font-size: 26px;
@@ -571,3 +567,5 @@ a.client_link, a.client_work, a.client_about {
 
 
 /**********media query ends here*********/
+
+

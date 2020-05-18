@@ -11,9 +11,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.waypoint.min.js"></script>
+  <script src="js/waypoint.js"></script>
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  
 
 </head>
 <body>
@@ -67,52 +71,21 @@
   </div>
 </div>
   
-<div class="container-fluid port_prax_img1 port_width">    
+<div class="container-fluid port_width">    
   <div class="row">
     <div class="col-sm-4">
-      <div class='slide'>
-        <div class='slide1'>
-          <img src="images/tile2StillImage.png">
-        </div>
-        <div class='slide2'>
-          <img src="images/tile6D.png">
-        </div>
-        <div class='slide3'>
-          <img src="images/tile6A.png">
-        </div>
-    </div>
+      <div class="port_prax_img1"></div>
   </div>
     <div class="col-sm-4">
-      <div class='slide'>
-        <div class='slide1'>
-          <img src="images/tile6B.png">
-        </div>
-        <div class='slide2'>
-          <img src="images/tile6C.png">
-        </div>
-        <div class='slide3'>
-          <img src="images/tile6D.png">
-        </div>
-    </div> 
-      
+          <img class="shea_img" src="images/tile2StillImage.png">
     </div>
     <div class="col-sm-4"> 
-     <div class='slide'>
-        <div class='slide1'>
-          <img src="images/tile2StillImage.png">
-        </div>
-        <div class='slide2'>
-          <img src="images/tile6C.png">
-        </div>
-        <div class='slide3'>
-          <img src="images/tile6A.png">
-        </div>
-    </div>
-    </div>
+     <div class="port_prax_img3"></div>
   </div>
 </div>
-
-<div class="container-fluid port_prax_img3 port_width">    
+</div>
+<br>
+<div class="container-fluid port_width">    
   <div class="row">
     <div class="col-sm-4 portf_text">
       <p>Some  of our recent</p>
@@ -123,46 +96,14 @@
     </div>
   </div>
 </div>
-<div class="container-fluid port_prax_img2 port_width">    
+<br>
+<div class="container-fluid port_width">    
   <div class="row">
-    <div class="col-sm-4">
-      <div class='slide'>
-        <div class='slide1'>
-          <img src="images/tile2StillImage.png">
-        </div>
-        <div class='slide2'>
-          <img src="images/tile6D.png">
-        </div>
-        <div class='slide3'>
-          <img src="images/tile6A.png">
-        </div>
+    <div class="col-sm-8">
+      <img class="pjt_side_img" src="images/tile5stillImage.png">
     </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class='slide'>
-        <div class='slide1'>
-          <img src="images/tile2StillImage.png">
-        </div>
-        <div class='slide2'>
-          <img src="images/tile6D.png">
-        </div>
-        <div class='slide3'>
-          <img src="images/tile6A.png">
-        </div>
-    </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class='slide'>
-        <div class='slide1'>
-          <img src="images/tile2StillImage.png">
-        </div>
-        <div class='slide2'>
-          <img src="images/tile6D.png">
-        </div>
-        <div class='slide3'>
-          <img src="images/tile6A.png">
-        </div>
-    </div>
+    <div class="col-sm-8"> 
+     <img class="pjt_side_img" src="images/tile5stillImage.png">
     </div>
   </div>
 </div><br><br>
@@ -329,18 +270,3 @@ $(function(){
 
 </script>
 
-
-
-<script>
-
-
-$(document).ready(function () {
-  $('.port_sec').waypoint(function(direction){
-    $('.port_sec').addClass('animated ZoomIn')
-  }, {
-    offset: '50%'
-  }
-});
-
-
-</script>
