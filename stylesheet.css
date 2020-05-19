@@ -221,6 +221,7 @@ a.navbar-brand img:hover {
     background-attachment: fixed;
     padding-bottom: 100%;
     background-position: right 10%;
+    background-repeat: no-repeat;
 }
 .port_prax_img2 {
     background-image: url(https://ramanaidu7.github.io/newpage/images/tile3paralax.jpg);
@@ -228,6 +229,7 @@ a.navbar-brand img:hover {
     background-attachment: fixed;
     padding-bottom: 100%;
     background-position: right 10%;
+    background-repeat: no-repeat;
 }
 img.shea_img, img.ark_img, img.slid1 {
     width: 100%;
@@ -254,7 +256,7 @@ img.shea_img, img.ark_img, img.slid1 {
     padding-bottom: 40%;
     background-position: right 10%;
 }
-.testSlidr {
+/*.testSlidr {
     width: 100%;
     margin: 0 auto;
     padding: 0 9%;
@@ -332,7 +334,7 @@ span.clnt_cmp {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
+}*/
 
 
 
@@ -379,7 +381,7 @@ img.img_adunit {
 
 /**********mobile style***********/
 
-@media only screen and (max-width: 640px){
+@media (min-width: 340px) and (max-width: 640px) {
 body {
     cursor: unset;
     overflow-x: hidden;
@@ -390,6 +392,9 @@ body {
 .row{
   margin: 0;
 }
+.navbar {
+    background: #250d59;
+}
 a.navbar-brand img {
     padding-left: 0;
 } 
@@ -398,16 +403,67 @@ a.navbar-brand img {
 }
 .masthead {
     background-position: 50% 0;
-    margin-top: -25%;
-    padding-bottom: 20%;
+    margin-top: -1%;
     margin-bottom: 15%;
+    background-size: 270% 150%;
+}
+.homeleftText {
+    margin-top: 100%;
+}
+.homeleftText h3 {
+    font-size: 17px;
+}
+.homeleftText h1 {
+    font-size: 40px;
+}
+.homeRightText {
+    margin-top: 20%;
+    font-size: 18px;
 }
 .portfolioSect1 {
     width: 100%;
 }
+.port_prax_img1 {
+  background-position: left;
+  margin-bottom: 10%;
+}
+img.shea_img {
+    margin-bottom: 10%;
+}
 img.ark_img {
     width: 100%;
-
+}
+.portf_text {
+    padding: 6% 0;
+    margin-bottom: 5%;
+}
+.port_prax_img3 {
+    background-attachment: fixed;
+    padding-bottom: 90%;
+    background-position: left;
+}
+img.ark_img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+.cnt_bg {
+    padding: 2rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+a.emil_link {
+    font-size: 32px;
+}
+.foot_sitemap {
+    margin-top: 20px;
+}
+.mob_pad {
+    padding: 0;
+}
+.go_top {
+    text-align: left;
+    padding: 0;
+    margin-top: 6%;
 }
 }
 
