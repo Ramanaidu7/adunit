@@ -376,3 +376,42 @@ img.img_adunit {
 
 
 
+
+/**********mobile style***********/
+
+@media only screen and (max-width: 640px){
+body {
+    cursor: unset;
+    overflow-x: hidden;
+}
+.cursor {
+    display: none;
+}
+.row{
+  margin: 0;
+}
+a.navbar-brand img {
+    padding-left: 0;
+} 
+#menuToggle {
+    right: 34px;
+}
+.masthead {
+    background-position: 50% 0;
+    margin-top: -25%;
+    padding-bottom: 20%;
+    margin-bottom: 15%;
+}
+.portfolioSect1 {
+    width: 100%;
+}
+img.ark_img {
+    width: 100%;
+
+}
+}
+
+
+
+
+/**********************/
