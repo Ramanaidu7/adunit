@@ -381,7 +381,7 @@ img.img_adunit {
 
 /**********mobile style***********/
 
-@media (min-width: 340px) and (max-width: 640px) {
+@media (min-width: 0px) and (max-width: 812px) {
 body {
     cursor: unset;
     overflow-x: hidden;
@@ -442,7 +442,6 @@ img.ark_img {
     margin-bottom: 10%;
 }
 .port_prax_img3 {
-    background-attachment: fixed;
     padding-bottom: 90%;
     background-position: left;
 }
