@@ -1,6 +1,11 @@
 /***********nav bar style*************/
 
-
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
 
 /********cursor style********/
 .shrink {
@@ -46,12 +51,6 @@ body{
 }
 /************************/
 
-.container {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1400px;
-}
 .a
 {
   text-decoration: none;
@@ -150,13 +149,26 @@ a:hover
   opacity: 1;
 }
 a.navbar-brand img {
-    padding-left: 80px;
-    margin: 0 auto;
-    transition: ease-in 2s;
+    position: relative;
+    left: 4.5em;
+    width: 80%;
+    margin-top: -8px;
+    transition: ease-in-out 1s;
+    animation: fadeInUo;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s; 
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 .shrink img {
-    padding-left: 6em;
     transition: ease-in 2s;
+    position: relative;
+    left: 4.5em;
+    animation: fadeInDown;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s; 
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
 }
 a.navbar-brand img:hover {
     cursor: none;
@@ -256,95 +268,73 @@ img.shea_img, img.ark_img, img.slid1 {
     padding-bottom: 40%;
     background-position: right 10%;
 }
-/*.testSlidr {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 9%;
+span.glyphicon.glyphicon-chevron-left, span.glyphicon.glyphicon-chevron-right {
+    color: #000;
+    opacity: 1;
+    text-shadow: none;
 }
-.testSlidr h1 {
-    padding-top: 7%;
+.carousel-control {
+    color: #000;
+    text-shadow: none;
+    position: absolute;
+    top: -420px;
+    opacity: 1;
+}
+a.left.carousel-control {
+    width: 0;
+    left: 74%;
+}
+a.right.carousel-control {
+    width: 0;
+    right: 57px;
+}
+.testiAdunit {
+    width: 83%;
+    margin: 0 auto;
+}
+.testiAdunit h2 {
     font-family: 'Quicksand', sans-serif;
     font-size: 64px;
+    font-weight: 400;
+}
+.carousel-indicators li {
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 5px;
+    height: 5px;
+    margin: 1px;
+    background-color: #000;
 }
 .item h4 {
-    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    line-height: 1.7em;
-}
-.owl-height {
-    height: 250px !important;
-}
-.owl-carousel {
-    margin-top: 6%;
+    font-size: 22px;
+    margin-bottom: 10%;
+    padding-top: 5%;
 }
 span.clnt_name {
     font-weight: 800;
-    font-size: 26px;
-    position: relative;
-    top: 30px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    line-height: 2.5em;
 }
-span.clnt_cmp {
-    font-weight: 500;
-    font-size: 26px;
-    position: relative;
-    top: 25px;
-    font-family: 'Open Sans', sans-serif;
+.carousel-indicators {
+    bottom: 364px;
+    left: 84%;
+    width: 4%;
+    margin-left: 0;
+    margin-left: -3%;
 }
-.owl-prev span, .owl-next span {
-    font-size: 65px;
-    top: -4em;
-    position: relative;
-}
- .owl-nav button {
-  position: absolute;
-  top: 50%;
-  background-color: #000;
-  margin: 0;
-  transition: all 0.3s ease-in-out;
-}
-.owl-nav button.owl-prev {
-  left:70%;
-  background-color: transparent !important;
-}
-.owl-nav button.owl-next {
-  right: 4%;
-  background-color: transparent !important;
-}
-
-.owl-dots {
-  text-align: center;
-  padding-top: 15px;
-}
-.owl-dots button.owl-dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  display: inline-block;
-  background: #ccc;
-  margin: 0 3px;
-}
-.owl-dots button.owl-dot.active {
-  background-color: #000;
-}
-.owl-dots button.owl-dot:focus {
-  outline: none;
-}
-.owl-nav button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}*/
-
-
-
 
 
 
 .cnt_bg {
     background-color: #000;
     font-family: 'Quicksand', sans-serif;
-    padding: 3rem 7rem;
+    padding: 3rem 10rem;
 }
 h2.let_talk {
     color: #fff;
@@ -474,3 +464,40 @@ a.emil_link {
 
 
 /**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
