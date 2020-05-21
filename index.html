@@ -36,11 +36,11 @@
 
     <!-- nav scroll color -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  
   
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
         <div class="cursor">
           <div class="cursorInn">
             
@@ -57,7 +57,7 @@
 
        <nav role='navigation' class="navbar navbar-expand-md navbar-fixed-top animate__animated animate__fadeInDown animate__fadeInUp" id="nav_scroll">
          <a class="navbar-brand" href="#" id="header"><img src="https://ramanaidu7.github.io/adunit/images/adunitlogo.png"></a>
-  <div id="menuToggle" >
+  <div id="menuToggle" class="hover" >
 
     <input type="checkbox">
 
@@ -66,11 +66,10 @@
     <span></span>
   
     <ul id="menu" class="menuList">
-      <a href="#"><li>Home</li></a>
       <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Service</li></a>
       <a href="#"><li>Contact</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      <a href="mailto:hey@adunitplus.com"><li>hey@adunitplus.com</li></a>
     </ul>
   </div>
   
@@ -95,12 +94,12 @@ if ($(this).scrollTop() > 70) {
   <div class="container">
     <div class="row homeMain">
       
-       <div class="col-md-6 homeleftText ">
+       <div class="col-md-6 homeleftText slideanim">
          <h3>In a market full of casuals...</h3>
          <h1>We help create<br>culture for brands.</h1>
          <h3>Through strategic branding, advertising,<br>and digital marketing services.</h3>
       </div>
-      <div class="col-md-6 homeRightText animate__animated animate__fadeInUp">
+      <div class="col-md-6 homeRightText slideanim">
         <p>In the ever fluctuating economic and business conditions,
           we help organisations and brands observe and act upon possible opportunities
           (which are aplenty today!), to not just sustain in the market, but create a new space
@@ -114,9 +113,9 @@ if ($(this).scrollTop() > 70) {
 <br>
 
 <div class="container">
-  <div class="row portfolioSect1">
+  <div class="row portfolioSect1 slideanim">
     <div class="col-md-4">
-      <div class="port_prax_img1"></div>
+      <div class="port_prax_img1 "></div>
     </div>
     <div class="col-md-4">
      <img class="shea_img" src="images/tile2StillImage.png">
@@ -127,7 +126,7 @@ if ($(this).scrollTop() > 70) {
   </div>
 </div><br>
 <div class="container">
-  <div class="row portfolioSect1">
+  <div class="row portfolioSect1 slideanim">
     <div class="col-md-4 rmv_pad">
       <div class="portf_text"> 
           <p>Some  of our recent</p>
@@ -140,11 +139,11 @@ if ($(this).scrollTop() > 70) {
   </div>
 </div><br>
 <div class="container">
-  <div class="row portfolioSect1">
+  <div class="row portfolioSect1 slideanim">
     <div class="col-md-8">
       <img class="ark_img" src="images/tile5stillImage.png">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 slideanim">
           
 <div id="slider">
 <figure>
@@ -161,7 +160,7 @@ if ($(this).scrollTop() > 70) {
 
       
       <div class="container">
-        <div class="row testiAdunit">
+        <div class="row testiAdunit slideanim">
   <h2>Client's Say</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -172,9 +171,9 @@ if ($(this).scrollTop() > 70) {
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner slideanim">
       <div class="item active">
-         <h4>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.”<br><span class="clnt_name">John Ivne</span><br><span class="clnt_cmp">Vice President</span></h4>
+         <h4>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.”<br><span class="clnt_name slideanim">John Ivne</span><br><span class="clnt_cmp slideanim">Vice President</span></h4>
       </div>
 
       <div class="item">
@@ -201,19 +200,19 @@ if ($(this).scrollTop() > 70) {
     
 
 
-<footer class="container cnt_bg">
-  <h2 class="let_talk">Let's talk</h2>
-  <a class="emil_link" href="mailto:hey@adunitplus.com">hey@adunitplus.com</a>
+<footer class="container cnt_bg slideanim">
+  <h2 class="let_talk slideanim">Let's talk</h2>
+  <a class="emil_link slideanim" href="mailto:hey@adunitplus.com">hey@adunitplus.com</a>
   <div class="row">
     <div class="col-sm-4 mob_pad">
       <div class="foot_sitemap">
-          <div class="foot_client">
+          <div class="foot_client slideanim">
             <a href="#" class="client_link">Client</a>
           </div>
-          <div class="foot_work">
+          <div class="foot_work slideanim">
              <a href="#" class="client_work">Work</a>
           </div>
-          <div class="foot_about">
+          <div class="foot_about slideanim">
              <a href="#" class="client_about">About</a>
           </div>
           <div style="clear: both;"></div>  
@@ -221,29 +220,64 @@ if ($(this).scrollTop() > 70) {
     </div>
     <div class="col-sm-4 mob_pad"> 
       <div class="foot_sitemap">
-          <div class="foot_client">
+          <div class="foot_client slideanim">
             <a href="#" class="client_link">Facebook</a>
           </div>
-          <div class="foot_work">
+          <div class="foot_work slideanim">
              <a href="#" class="client_work">Instagram</a>
           </div>
-          <div class="foot_about">
+          <div class="foot_about slideanim">
              <a href="#" class="client_about">Linkedin</a>
           </div>
           <div style="clear: both;"></div>  
       </div>
     </div>
     <div class="col-sm-4 go_top"> 
-     <a href="#"> <img class="img_adunit" src="images/adunitlogo.png"> </a>
+     <a href="#"> <img class="img_adunit slideanim" src="images/adunitlogo.png"> </a>
     </div>
 
 </div>
   
 </footer>
+   <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
    
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
 </body>
 </html>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
