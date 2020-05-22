@@ -175,7 +175,7 @@ a:hover
 a.navbar-brand img {
     position: relative;
     transition: ease-in-out 1s;
-    animation: fadeInUp;
+    animation: fadeIn;
     animation-duration: 5s;
     -webkit-animation-duration: 5s;
     position: relative;
@@ -187,7 +187,7 @@ a.navbar-brand img {
     transition: ease-in 2s;
     position: relative;
    /* left: 4.5em;*/
-    animation: fadeInDown;
+    animation: fadeIn;
   animation-duration: 5s;
   -webkit-animation-duration: 5s;
 }
@@ -407,16 +407,19 @@ body {
 }
 a.navbar-brand img {
     position: relative;
-    left: -50px;
-    width: 63%;
+    left: -65px;
+    width: 50%;
+    transition: unset;
 }
 .navbar {
     background: #250d59;
 }
 .shrink .navbar-brand img {
     position: relative;
-    left: -6em !important;
+    left: -4em !important;
+    width: 15%;
 }
+
 #menuToggle {
     right: 34px;
 }
