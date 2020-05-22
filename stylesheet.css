@@ -1,5 +1,14 @@
 /***********nav bar style*************/
-
+.navbar {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100px;
+    transition: ease-in-out 2s;
+    animation: fadeInUp;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+}	
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1500px;
     margin: 0 auto;
@@ -55,21 +64,25 @@ body{
 .a
 {
   text-decoration: none;
-  color: #232323;  
-  transition: color 0.3s ease;
+  color: #fff;  
+  transition: ease-in-out 1s;
 }
 a:hover
 {
-  color: tomato;
+  color: #000;
+  transition: ease-in-out 1s; 
 }
 #menuToggle {
     display: block;
     position: absolute;
-    top: 26px;
+    top: 40px;
     right: 160px;
     z-index: 1;
     -webkit-user-select: none;
-    user-select: none;
+    user-select: none;    
+    animation: fadeInUp;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
 }
 #menuToggle input
 {
@@ -105,7 +118,7 @@ a:hover
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#menuToggle span:nth-last-child(3)
 {
   transform-origin: 0% 100%;
 }
@@ -115,15 +128,13 @@ a:hover
   transform: rotate(45deg) translate(-2px, -1px);
   background: #fff;
 }
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-11px, 15px);
 }
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(45deg) translate(-5px, -8px);
 }
 #menu {
     position: absolute;
@@ -132,7 +143,7 @@ a:hover
     padding: 50px;
     padding-top: 58px;
     right: 0;
-    background: #511ccc;
+    background-image: linear-gradient(to bottom, #5620cb, #6330d2, #6e3ed9, #7a4be0, #8558e7);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -143,33 +154,42 @@ a:hover
 {
   padding: 10px 0;
   font-size: 22px;
+  color: #fff;
+  font-family: quicksand;
+  font-weight: 600;
 }
 #menuToggle input:checked ~ ul
 {
   transform: scaleX(1.0, 1.0);
   opacity: 1;
 }
+  .navbar-brand {
+    float: none;
+    height: 100px;
+    padding: 3%;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 5.5%;
+    z-index: 99;
+}
 a.navbar-brand img {
     position: relative;
-    left: 4.5em;
-    width: 80%;
-    margin-top: -8px;
     transition: ease-in-out 1s;
-    animation: fadeInUo;
-  animation-duration: 5s;
-  -webkit-animation-duration: 5s; 
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+    animation: fadeInUp;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    position: relative;
+    top: 0px;
+    z-index: -99;
+    margin-left: 10rem;
 }
 .shrink img {
     transition: ease-in 2s;
     position: relative;
-    left: 4.5em;
+   /* left: 4.5em;*/
     animation: fadeInDown;
   animation-duration: 5s;
-  -webkit-animation-duration: 5s; 
-  animation-delay: 5s;
-  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 5s;
 }
 a.navbar-brand img:hover {
     cursor: none;
@@ -366,8 +386,10 @@ a.client_link, a.client_work, a.client_about {
 img.img_adunit {
     margin-top: 8px;
 }
+.menuList:hover ~ .cursor{
 
-
+	transform: translate(-50%, -50%) scale(8);
+}
 
 
 /**********mobile style***********/
@@ -567,39 +589,3 @@ div#slider figure {
   }
 
 
-  <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a,").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 500, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 500) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>

@@ -4,16 +4,13 @@
   <title>Adunit</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   
 <!-- font link -->
@@ -23,10 +20,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+   
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-
+<script src="scritp.js"></script>
   
   
 <!-- Slider -->
@@ -36,7 +33,7 @@
 
     <!-- nav scroll color -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
  
   
 </head>
@@ -55,20 +52,20 @@
         </script>
 <div class="container bg_color">
 
-       <nav role='navigation' class="navbar navbar-expand-md navbar-fixed-top animate__animated animate__fadeInDown animate__fadeInUp" id="nav_scroll">
-         <a class="navbar-brand" href="#" id="header"><img src="https://ramanaidu7.github.io/adunit/images/adunitlogo.png"></a>
-  <div id="menuToggle" class="hover" >
+       <nav role='navigation' class="navbar navbar-expand-md navbar-fixed-top animate__animated animate__fadeInUp" id="nav_scroll">
+         <a class="navbar-brand" href="#myPage" id="header"><img src="https://ramanaidu7.github.io/adunit/images/adunitlogo.png"></a>
+  <div id="menuToggle" class="hover animate__animated animate__fadeInUp" >
 
     <input type="checkbox">
 
-    <span></span>
+   <!--  <span></span> -->
     <span></span>
     <span></span>
   
-    <ul id="menu" class="menuList">
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Service</li></a>
-      <a href="#"><li>Contact</li></a>
+    <ul id="menu" class="menuList ">
+      <a href="#client"><li>Client</li></a>
+      <a href="#work"><li>work</li></a>
+      <a href="#about"><li>about</li></a>
       <a href="mailto:hey@adunitplus.com"><li>hey@adunitplus.com</li></a>
     </ul>
   </div>
@@ -76,11 +73,11 @@
   <script>
   
 $(window).on('scroll', function () {
-if ($(this).scrollTop() > 70) {
-    $('.navbar').addClass("shrink animate__animated animate__fadeInDown");
+if ($(this).scrollTop() > 140) {
+    $('.navbar').addClass("shrink animate__animated animate__fadeInUp");
     $('.navbar-brand  img').attr('src', 'https://ramanaidu7.github.io/adunit/images/alight.png');
 }else{
-    $('.navbar').removeClass("shrink");
+    $('.navbar').removeClass("shrink animate__animated animate__fadeInDown");
     $('.navbar-brand  img').attr('src', 'https://ramanaidu7.github.io/adunit/images/adunitlogo.png');
 }
 });
@@ -207,13 +204,13 @@ if ($(this).scrollTop() > 70) {
     <div class="col-sm-4 mob_pad">
       <div class="foot_sitemap">
           <div class="foot_client slideanim">
-            <a href="#" class="client_link">Client</a>
+            <a id="client" href="#" class="client_link">Client</a>
           </div>
           <div class="foot_work slideanim">
-             <a href="#" class="client_work">Work</a>
+             <a id="work" href="#" class="client_work">Work</a>
           </div>
           <div class="foot_about slideanim">
-             <a href="#" class="client_about">About</a>
+             <a id="about" href="#" class="client_about">About</a>
           </div>
           <div style="clear: both;"></div>  
       </div>
@@ -233,7 +230,7 @@ if ($(this).scrollTop() > 70) {
       </div>
     </div>
     <div class="col-sm-4 go_top"> 
-     <a href="#"> <img class="img_adunit slideanim" src="images/adunitlogo.png"> </a>
+     <a href="#myPage"> <img class="img_adunit slideanim" src="images/adunitlogo.png"> </a>
     </div>
 
 </div>
@@ -281,3 +278,6 @@ $(document).ready(function(){
 
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+  
